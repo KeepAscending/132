@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lvg-redis" />
+        <module name="lvg-collect" />
+        <module name="lvg-commons" />
+        <module name="lvg-service" />
+        <module name="lvg-passport" />
+        <module name="lvg-pojo" />
+        <module name="lvg-portal" />
+        <module name="lvg-manage" />
+        <module name="lvg-order" />
+        <module name="lvg-service-impl" />
+        <module name="lvg-search" />
+        <module name="lvg-item" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

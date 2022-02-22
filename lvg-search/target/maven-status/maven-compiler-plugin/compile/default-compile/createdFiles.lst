@@ -1,0 +1,4 @@
+com\lvg\search\pojo\QueryEntity.class
+com\lvg\search\service\TbGroupItemService.class
+com\lvg\search\controller\TbGroupItemController.class
+com\lvg\search\service\impl\TbGroupItemServiceImpl.class

@@ -1,0 +1,8 @@
+com\lvg\commons\pojo\LvgResult.class
+com\lvg\commons\utils\CookieUtils.class
+com\lvg\commons\pojo\WxDataGrid.class
+com\lvg\commons\utils\JsonUtils.class
+com\lvg\commons\pojo\TbGroupItemChild.class
+com\lvg\commons\utils\FtpUtil.class
+com\lvg\commons\utils\HttpClientUtil.class
+com\lvg\commons\utils\IDUtils.class

@@ -1,0 +1,16 @@
+com\lvg\mapper\TbOrderMapper.class
+com\lvg\mapper\TbUgcEvalMapper.class
+com\lvg\mapper\TbGroupMapper.class
+com\lvg\dubbo\service\impl\TbGroupDubboServiceImpl.class
+com\lvg\dubbo\service\impl\TbOrderDubboServiceImpl.class
+com\lvg\mapper\TbOrderEvalMapper.class
+com\lvg\test\Test.class
+com\lvg\dubbo\service\impl\TbGroupItemDubboServiceImpl.class
+com\lvg\mapper\TbGroupItemMapper.class
+com\lvg\dubbo\service\impl\TbAdvertDubboServiceImpl.class
+com\lvg\dubbo\service\impl\TbOrderEvalDubboServiceImpl.class
+com\lvg\mapper\TbUserMapper.class
+com\lvg\mapper\TbUserMessageMapper.class
+com\lvg\dubbo\service\impl\TbUserDubboServiceImpl.class
+com\lvg\mapper\TbAdvertMapper.class
+com\lvg\mapper\TbUgcMapper.class

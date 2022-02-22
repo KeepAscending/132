@@ -1,0 +1,4 @@
+com\lvg\passport\service\impl\TbUserServiceImpl.class
+com\lvg\passport\controller\TbUserController.class
+com\lvg\passport\service\TbUserService.class
+com\lvg\passport\pojo\OpenId.class

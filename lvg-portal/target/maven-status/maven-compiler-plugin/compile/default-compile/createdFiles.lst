@@ -1,0 +1,3 @@
+com\lvg\portal\controller\TbAdvertController.class
+com\lvg\portal\service\TbAdvertService.class
+com\lvg\portal\service\impl\TbAdvertServiceImpl.class

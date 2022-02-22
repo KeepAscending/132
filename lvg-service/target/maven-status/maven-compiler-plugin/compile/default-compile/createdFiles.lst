@@ -1,0 +1,6 @@
+com\lvg\dubbo\service\TbOrderDubboService.class
+com\lvg\dubbo\service\TbUserDubboService.class
+com\lvg\dubbo\service\TbGroupItemDubboService.class
+com\lvg\dubbo\service\TbGroupDubboService.class
+com\lvg\dubbo\service\TbOrderEvalDubboService.class
+com\lvg\dubbo\service\TbAdvertDubboService.class

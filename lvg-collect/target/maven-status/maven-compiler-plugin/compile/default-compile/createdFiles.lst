@@ -1,0 +1,6 @@
+com\lvg\collect\controller\TbUserController.class
+com\lvg\collect\service\impl\TbGroupItemServiceImpl.class
+com\lvg\collect\service\TbGroupItemService.class
+com\lvg\collect\service\TbUserService.class
+com\lvg\collect\service\impl\TbUserServiceImpl.class
+com\lvg\collect\controller\TbGroupItemController.class

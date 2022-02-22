@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://code.alibabatech.com/schema/dubbo 
+		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+   <!-- 给当前Provider自定义一个名字 .方便在monitor或管理工具中区别是哪个provider-->
+   <dubbo:application name="dubbo-service"></dubbo:application>
+   <!-- 配置注册中心 .address="注册中心的ip:端口号"; protocol="使用哪种注册中心" -->
+   <dubbo:registry address="192.168.249.130:2181" protocol="zookeeper"></dubbo:registry>
+   <!-- 配置端口.name="使用的协议";port="consumer invoke provider时的端口号" -->
+   <dubbo:protocol name="dubbo" port="20880" payload="88888888"></dubbo:protocol>
+   <!-- 注册功能接口 .ref="引用接口实现类<bean>的id值"-->
+   <dubbo:service interface="com.lvg.dubbo.service.TbGroupItemDubboService" ref="tbGroupItemDubboServiceImpl"></dubbo:service>
+   <bean id="tbGroupItemDubboServiceImpl" class="com.lvg.dubbo.service.impl.TbGroupItemDubboServiceImpl"></bean>
+   <dubbo:service interface="com.lvg.dubbo.service.TbUserDubboService" ref="tbUserDubboServiceImpl"></dubbo:service>
+   <bean id="tbUserDubboServiceImpl" class="com.lvg.dubbo.service.impl.TbUserDubboServiceImpl"></bean>
+   <dubbo:service interface="com.lvg.dubbo.service.TbAdvertDubboService" ref="tbAdvertDubboServiceImpl"></dubbo:service>
+   <bean id="tbAdvertDubboServiceImpl" class="com.lvg.dubbo.service.impl.TbAdvertDubboServiceImpl"></bean>
+   <dubbo:service interface="com.lvg.dubbo.service.TbGroupDubboService" ref="TbGroupDubboServiceImpl"></dubbo:service>
+   <bean id="TbGroupDubboServiceImpl" class="com.lvg.dubbo.service.impl.TbGroupDubboServiceImpl"></bean>
+   <dubbo:service interface="com.lvg.dubbo.service.TbOrderDubboService" ref="TbOrderDubboServiceImpl"></dubbo:service>
+   <bean id="TbOrderDubboServiceImpl" class="com.lvg.dubbo.service.impl.TbOrderDubboServiceImpl"></bean>
+    <dubbo:service interface="com.lvg.dubbo.service.TbOrderEvalDubboService" ref="TbOrderEvalDubboServiceImpl"></dubbo:service>
+   <bean id="TbOrderEvalDubboServiceImpl" class="com.lvg.dubbo.service.impl.TbOrderEvalDubboServiceImpl"></bean>
+   
+   <!-- 同时把spring配置也加载 -->
+   <import resource="../../applicationContext.xml"/>
+   
+</beans>

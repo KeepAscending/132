@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.lvg</groupId>
+    <artifactId>lvg-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>lvg-portal</artifactId>
+  <packaging>war</packaging>
+  
+  <dependencies>
+    <!-- 依赖lvg-redis -->
+    <dependency>
+      <groupId>com.lvg</groupId>
+      <artifactId>lvg-redis</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <!-- 依赖lvg-service -->
+    <dependency>
+      <groupId>com.lvg</groupId>
+      <artifactId>lvg-service</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <!-- javaEE -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+    </dependency>
+    <!-- spring -->
+    <dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-webmvc</artifactId>
+	</dependency>
+   
+    <!-- 日志包 -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+    </dependency>
+  
+    <!-- jackson -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+    </dependency>
+    <!-- fileupload -->
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+    </dependency>
+    
+    <!-- dubbo -->
+    <dependency>
+         <groupId>com.alibaba</groupId>
+         <artifactId>dubbo</artifactId>
+         <exclusions>
+           <exclusion>
+           <groupId>org.springframework</groupId>
+        <artifactId>spring</artifactId>
+           </exclusion>
+         </exclusions>
+       </dependency>
+
+    <!-- 访问zookeeper客户端的jar -->
+    <dependency>
+      <groupId>com.101tec</groupId>
+      <artifactId>zkclient</artifactId>
+    </dependency>
+    
+    <!-- ftpclient -->
+    <dependency>
+      <groupId>commons-net</groupId>
+      <artifactId>commons-net</artifactId>
+    </dependency>
+    
+    <!-- jedis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+    </dependency>
+    
+    <!-- mybatis分页插件 -->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+    </dependency> 
+  </dependencies>
+  
+  <build>
+     <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <configuration>
+          <port>8082</port>
+          <path>/</path>
+        </configuration>
+      </plugin>
+	 </plugins>
+  </build>
+  
+</project>
